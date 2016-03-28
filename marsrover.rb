@@ -1,7 +1,5 @@
 # Rover class definition
 
-
-
 class Rover
   # x is an integer from 0 to board width - 1
   # y is an integer from 0 to board height - 1
@@ -85,26 +83,7 @@ end
 
 # Main program
 
-# rover1 = Rover.new(0, 0, "N", 5, 5)
-# puts "Rover 1 is at (#{rover1.x}, #{rover1.y}) and facing #{rover1.orientation}"
-#
-# rover1.move
-# puts "Rover 1 is at (#{rover1.x}, #{rover1.y}) and facing #{rover1.orientation}"
-#
-# rover1.turn("R")
-# puts "Rover 1 is at (#{rover1.x}, #{rover1.y}) and facing #{rover1.orientation}"
-#
-# rover1.move
-# puts "Rover 1 is at (#{rover1.x}, #{rover1.y}) and facing #{rover1.orientation}"
-#
-# rover1.turn("L")
-# puts "Rover 1 is at (#{rover1.x}, #{rover1.y}) and facing #{rover1.orientation}"
-#
-# rover1.move
-# puts "Rover 1 is at (#{rover1.x}, #{rover1.y}) and facing #{rover1.orientation}"
-
 # 1. Get input
-# Will require string operations to break up strings into components
 
 puts "Enter plateau size:"
 input_line1 = gets
@@ -128,7 +107,7 @@ puts input_line3
 puts input_line4
 puts input_line5
 
-# Parse input
+# 2. Parse input
 
 # Plateau width and height
 plateau_width = 1
@@ -182,7 +161,7 @@ puts "Rover 2 status - x: #{rover2_x} y: #{rover2_y} orientation: #{rover2_orien
 rover2_instructions = input_line5.split('') # Why does this give me one extra array element at the end?
 puts rover2_instructions
 
-# 2. Do program logic
+# 3. Do program logic and output results
 # Execute moves on the 2 rovers
 
 rover1 = Rover.new(rover1_x, rover1_y, rover1_orientation, plateau_width, plateau_height)
